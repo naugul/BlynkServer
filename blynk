@@ -1,6 +1,6 @@
 #!/bin/sh
 
-server=$(ls /blynk | grep 'server' | grep 'jar' | grep 'java8')
+server=$(ls /blynk | grep 'server' | grep 'jar' | grep -v 'SNAPSHOT')
 
 SERVICE_NAME=Blynk
 PATH_TO_JAR=/blynk/$server
